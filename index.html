@@ -94,20 +94,22 @@
     <!-- Comment section starts here -->
     <section id="comment" class="mt-5 py-5">
         <div class="container">
-            <h2 class="text-center text-white">Drop us a line</h2>
-            <div class="form-group">
-                <label for="name" class="text-white">Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="helpId" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="email" class="text-white">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="helpId" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="message" class="text-white">Your Message to us:</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-            </div>
-            <button class="btn btn-outline-white border-white btnClass" type="submit">Submit</button>
+            <form name="google-sheet" method="post">
+                <h2 class="text-center text-white">Drop us a line</h2>
+                <div class="form-group">
+                    <label for="name" class="text-white">Name</label>
+                    <input type="text" class="form-control" id="name" name="Name" aria-describedby="helpId" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-white">Email</label>
+                    <input type="email" class="form-control" id="email" name="Email" aria-describedby="helpId" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="text-white">Your Message to us:</label>
+                    <textarea class="form-control" id="message" name="Message" rows="3"></textarea>
+                </div>
+                <button class="btn btn-outline-white border-white btnClass" type="submit">Submit</button>
+            </form>
         </div>
     </section>
     <!-- Comment section ends here -->
@@ -204,6 +206,7 @@
         crossorigin="anonymous"></script>
     <!-- Fontawesome JS -->
     <script src="https://kit.fontawesome.com/37df777d72.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
