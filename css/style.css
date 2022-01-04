@@ -1,0 +1,103 @@
+/* CSS Utility */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    background-color: rgb(22, 22, 22);
+}
+
+/* Navbar */
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding: 4px 50px;
+    margin: 30px 0px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+.logo i{
+    margin-left: 5px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list li{
+    list-style: none;
+    margin: 0px 22px;
+}
+.nav-list li a{
+    text-decoration: none;
+}
+
+.fa-search:before, .fa-cart-plus:before, .fa-user:before {
+    content: "\f002";
+    color: white;
+}
+
+/* Home Section */
+#home{
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.leftHome{
+    width: 50%;
+    padding: 50px;
+    margin-left: 30px;
+}
+.rightHome{
+    width: 50%;
+    color: white;
+}
+.rightHome h1{
+    padding: 20px 0px;
+}
+.rightHome p{
+    padding: 10px 0px;
+}
+.leftHome img{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.btnClass{
+    color: white;
+    font-size: 1.3rem;
+}
+.btnClass:hover{
+    color: rgb(22, 22, 22);
+    background-color: white;
+}
+
+/* Trending */
+
+#trending{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.item{
+    width: 32%;
+}
+.item img{
+    width: 100%;
+}
